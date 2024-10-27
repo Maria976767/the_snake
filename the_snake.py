@@ -127,7 +127,7 @@ class Snake(GameObject):
         head_position = self.positions[0]
         self.draw_cell(surface, head_position, SNAKE_COLOR)
 
-def get_head_position(self) -> Tuple[int, int]:
+    def get_head_position(self) -> Tuple[int, int]:
         """
         Возвращает позиция головы змейка
         (там первый элемент в списке positions).
@@ -184,5 +184,5 @@ def main() -> None:
         pygame.display.update()
 
 
-if name == '__main__':
+if __name__ == '__main__':
     main()
